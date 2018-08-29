@@ -1,0 +1,49 @@
+.placeholder {
+  background-color: rgb(200,200,255);
+  border: 2px solid rgb(50, 50, 100);
+}
+
+header{
+
+    font-size: XXL;
+    font-weight:bold;
+    font-family:"Verdana";
+    color:White;
+    background-color:red;
+    border-bottom:solid 3px Black;
+
+}
+body{
+    font-family:sans-serif
+}
+nav {
+    font-size:small;
+    font-weight:bold;
+    font-style:italic;
+    color:red;
+   border:solid 3px black;
+
+}
+
+footer{
+    font-size:small;
+    font-family:"Verdana";
+    color: white;
+   background-color:black;
+
+}
+
+a{
+    font-weight:bold;
+    color:red;
+    text-decoration:none;
+}
+a:hoover  {
+    color: #e07e27
+}
+
+
+li{
+    list-style-type: none;
+    margin-bottom: 15px;
+}
