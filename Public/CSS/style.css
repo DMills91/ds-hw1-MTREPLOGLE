@@ -16,8 +16,20 @@ img {
   }
 
 h3{
-font-family: Serif
+font-family: Serif;
+margin-left: 20px;
 }
+p{
+margin-left: 20px;
+
+}
+form{
+  margin-left: 20px;
+}
+img{
+  margin-left: 1px;
+}
+
 header{
 
     font-size: XXL;
@@ -26,6 +38,7 @@ header{
     color:White;
     background-color:red;
     border-bottom:solid 3px Black;
+
 
 }
 body{
