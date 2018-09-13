@@ -27,37 +27,53 @@
       <nav><a href="Index.html">Home</a> <a href="Travel.Html">Travel</a> <a href="Family.Html">Family</a> </nav>
       <main>
           <h3>User Profile</h3>
+
+          //use v-bind for images
           <a href="img\579a7fff0551b.image.jpg">
   <img src="img\579a7fff0551b.image.jpg" alt="Mike Replogle">
 </a>
-<tr v-for="task in tasks">
+<div id="randomUser">
+
+<ul>
 
 
             <li>
-              {{task.name}}
+              {{person.name}}
             </li>
 
             <li>
-              Email: <a>{{ task.email }}</a>
+              Email: <a>{{ person.email }}</a>
             </li>
 
             <li>
-                Birthday: {{  task.birthday  }}
+                Birthday: {{  person.dob  }}
             </li>
             <li>
-              Age: {{ task.Age}}
+              Age: {{ }}
             </li>
             <li>
-              Country: {{  task.country  }}
+              Country: {{  person.location  }}
             </li>
-          </tr>
+
+            </ul>
+          </div>
 
       </main>
 <footer class="placeholder">
 Address: 1600 Pennsylvania Ave NW, Washington, DC 20500
 </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- vue.min via CDN-->
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+
+    <!-- link api.js page-->
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
     <script src="js/dashboard.app.js"></script>
     </body>
     </html>
