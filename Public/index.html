@@ -39,14 +39,14 @@
             </li>
 
             <li>
-              Email: <a>{{ person.email }}</a>
+              Email: <a v-bind:href="getemail(person.email)">{{ person.email }}</a>
             </li>
 
             <li>
                 Birthday: {{ pretty_date(person.dob)  }}
             </li>
             <li>
-              Age: {{ }}
+              Age: {{ getAge(person.dob) }}
             </li>
             <li>
               Country: {{  person.location  }}
@@ -54,7 +54,7 @@
 
             </ul>
 
-          <button type="button" name="Refresh" @Click="fetchRandomUser" style="width:100pt; height:20pt">Refresh</button>
+          <button type="button" name="Refresh" @click="fetchRandomUser" style="width:100pt; height:20pt">Refresh</button>
 </div>
       </main>
 <footer class="placeholder">
