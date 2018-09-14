@@ -10,10 +10,30 @@ data: {
   }
 },
 computed:{
-
+  days_left: function () {
+        return moment(this.project.target_date).diff(moment(), 'days')
+},
+shorten_date: function (){
+  return dob.trunc(15);
 },
 
+refresh_page: function (){
+  return refreshPage();{
+    window.location.reload();
+  }
+
+}
+
+
+},
 methods: {
+pretty_date: function(d)
+{
+  return moment(d).format("MMM Do YY");
+},
+
+
+
   fetchRandomUser () {
     fetch('https://randomuser.me/api/')
     .then( (response) => response.json())
