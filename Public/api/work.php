@@ -1,6 +1,6 @@
 <?php
 
-require '../../app/common.pho';
+require '../../app/common.php';
 
 $taskId= $_GET('taskId') ?? 0;
 
