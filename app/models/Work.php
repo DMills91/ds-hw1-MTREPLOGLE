@@ -10,10 +10,11 @@
       $this->id = intval($row['id']);
       $this->comment = $row['comment'];
 
+}
       public static function getWorkByTaskId(int $taskId) {
 
-      return $arr;
+      return [] ;
     }
 
-   }
+
  }
