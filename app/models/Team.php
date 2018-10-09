@@ -3,16 +3,13 @@
 class Team
 {
   public $id;
-  public $name;
-  public $hourly_rate;
+  public $comment;
 
   public function  __construct($data) {
     $this->id = intval($data['id']);
     $this->comment = ($data['comment']);
 
   }
-
-
 
   public static function fetchAll() {
       // 1. Connect to the database
