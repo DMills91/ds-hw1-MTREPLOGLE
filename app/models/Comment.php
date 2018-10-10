@@ -37,7 +37,7 @@ $sql = 'INSERT Teams(id, comment)
       $statement = $db->prepare($sql);
       $success = $statement->execute([
         $this->id,
-        $this->comment,
+        $this->comment
       ]);
 
 $this->id = $db->lastInsertId();
