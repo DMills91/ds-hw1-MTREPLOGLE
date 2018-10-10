@@ -6,7 +6,7 @@ class Comment
   public $comment;
 
   public function  __construct($data) {
-    $this->id = intval($data['id']);
+    $this->id = isset($data['id']) ?intval($data['id']):null;
     $this->comment = ($data['comment']);
 
   }
@@ -24,7 +24,7 @@ class Comment
       while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
         // 4.a. For each row, make a new work object
         $theComment =  new Comment($row);
-        array_push($arr, $theTeam);
+        array_push($arr, $theComment);
       }
       return $arr;
     }
