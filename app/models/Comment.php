@@ -29,6 +29,21 @@ class Comment
       return $arr;
     }
 
+    public function create()  {
+$db = new PDO(DB_SERVER, DB_USER, DB_PW);
+$sql = 'INSERT Teams(id, comment)
+        VALUES (?, ?)';
+
+      $statement = $db->prepare($sql);
+      $success = $statement->execute([
+        $this->id,
+        $this->comment,
+      ]);
+
+
+
+    }
+
 
 
 
