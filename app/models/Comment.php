@@ -35,6 +35,7 @@ class Comment
 
     $statement = $db->prepare($sql);
     $success = $statement->execute([
+      $this->id,
       $this->comment
     ]);
 
