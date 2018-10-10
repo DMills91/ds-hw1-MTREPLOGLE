@@ -40,6 +40,7 @@ $sql = 'INSERT Teams(id, comment)
         $this->comment,
       ]);
 
+$this->id = $db->lastInsertId();
 
 
     }
