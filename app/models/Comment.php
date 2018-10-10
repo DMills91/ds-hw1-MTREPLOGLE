@@ -1,6 +1,6 @@
 <?php
 
-class Team
+class Comment
 {
   public $id;
   public $comment;
@@ -23,7 +23,7 @@ class Team
       $arr = [];
       while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
         // 4.a. For each row, make a new work object
-        $theTeam =  new Team($row);
+        $theComment =  new Comment($row);
         array_push($arr, $theTeam);
       }
       return $arr;
