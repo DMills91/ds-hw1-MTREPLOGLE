@@ -17,10 +17,10 @@
           </thead>
           <tbody id="commentTableBody">
             <tr v-for="task in tasks"
-                :key="task.id"
-                :id="'task-' + task.id"
+                :key="comment.id"
+                :id="'task-' + comment.id"
                 :class="task.current_sprint ? 'current-sprint' : '' "
-                @click="gotoTask(task.id)">
+                @click="gotoTask(comment.id)">
               <td>{{ comment.id }}</td>
               <td>{{ comment.comment }}</td>
             </tr>

@@ -12,14 +12,14 @@ methods: {
       fetch('api/comment.php')
       .then( response => response.json() )
       .then( json => {
-        comment.app.js.comment = json;
+        commentapp.comment = json;
 
-      }
+      })
     .catch( err => {
       console.log('COMMENT FETCH ERROR:');
       console.log(err);
     })
-  )},
+  },
 
   created ()  {
     this.fetchComment()
