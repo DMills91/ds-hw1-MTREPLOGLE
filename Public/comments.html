@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-<title>Comments Page</title>  
+<title>Comments Page</title>
 </head>
 
 <body>
@@ -33,10 +33,10 @@
 <br />
 <br  />
 
-<form id="newCommentTable">
+<form id="newCommentTable" @submit.prevent>
   <div class="form-group">
     <label for="New Comment">Comment</label>
-    <input id="comment"   type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter comment">
+    <input id="comment"   type="text" class="form-control" placeholder="Enter comment">
     <small id="emailHelp" class="form-text text-muted">We'll never share your comment with anyone else.</small>
   </div>
 
