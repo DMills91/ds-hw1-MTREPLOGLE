@@ -1,5 +1,5 @@
-var fetchRandomUser = new Vue({
-  el: '#randomUser',
+var fetchComment = new Vue({
+  el: '#randomComment',
   data: {
     comment: {
       id:'',
