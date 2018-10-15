@@ -30,7 +30,7 @@ class Comment
 
   public function create()  {
     $db = new PDO(DB_SERVER, DB_USER, DB_PW);
-    $sql = 'INSERT into Teams (id,comment)
+    $sql = 'INSERT into Standard (id,comment)
     VALUES (?,?)';
 
     $statement = $db->prepare($sql);
