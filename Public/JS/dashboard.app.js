@@ -7,7 +7,8 @@ var fetchRandomUser = new Vue({
       email:'',
       dob:'',
       picture:''
-    }
+    },
+
   },
   methods: {
       getAge: function (dateString) {
@@ -24,6 +25,7 @@ var fetchRandomUser = new Vue({
     {
       return moment(d).format("MMM Do YY");
     },
+
 
     fetchRandomUser: function () {
       fetch('https://randomuser.me/api/')
@@ -44,11 +46,8 @@ var fetchRandomUser = new Vue({
     getemail:  function(email){
       return "mailto:"+ email;
     },
-
-
     created ()  {
       this.fetchRandomUser()
-    }
-  }
-
+    },
+}
 })
