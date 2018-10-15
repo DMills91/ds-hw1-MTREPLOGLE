@@ -19,8 +19,7 @@
             <tr v-for="task in tasks"
                 :key="comment.id"
                 :id="'task-' + comment.id"
-                :class="task.current_sprint ? 'current-sprint' : '' "
-                @click="gotoTask(comment.id)">
+              >
               <td>{{ comment.id }}</td>
               <td>{{ comment.comment }}</td>
             </tr>
@@ -48,7 +47,7 @@
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
 
   <script src="JS/comment.app.js"></script>
-  
+
 
 </body>
 
