@@ -15,18 +15,15 @@
               <th>Details</th>
             </tr>
           </thead>
-          <tbody id="commentTableBody">
-            <tr v-for="task in tasks"
-                :key="comment.id"
-                :id="'task-' + comment.id"
-              >
-              <td>{{ comment.id }}</td>
-              <td>{{ comment.comment }}</td>
+          <tbody id="commentTableBody" v-for="c in comment">
+            <tr>
+              <td>{{ c.id }}</td>
+              <td>{{ c.comment }}</td>
             </tr>
           </tbody>
         </table>
-      </div> <!-- end row 3, tabular data -->
-<form  id="newCommentTable">
+      </div>
+      <form  id="newCommentTable">
   <div class="form-group">
     <label for="New Comment">Comment</label>
     <input id="comment"   type="text" class="form-control" v-model="new.comment" placeholder="Enter comment">
