@@ -10,12 +10,7 @@ var fetchComment = new Vue({
 
   methods: {
     newCommentTable: function() {
-      // TODO: Check validity in a better way
-      if (this.comment <= 0) {
-        console.error('Cannot submit, invalid values');
-        return;
-      }
-      const s = JSON.stringify(this.comment);
+      const s = JSON.stringify(this.commentForm);
       console.log(s);
       // POST to remote server
       fetch('../api/comment.php', {
