@@ -8,7 +8,7 @@ var fetchComment = new Vue({
     */},
   },
 
-  methods: {
+  methods: {/*
     newCommentTable() {
 
       // TODO: Check validity in a better way
@@ -43,7 +43,7 @@ var fetchComment = new Vue({
       return {
         comment:null
       }
-    },
+    },*/
     fetchComment () {
       fetch('../api/comment.php')
       .then( response => response.json() )
