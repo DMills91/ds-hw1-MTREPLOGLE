@@ -26,7 +26,7 @@
     </div>
     <div class="row">
         <div class="col-12">
-          <form  id="newCommentTable" @submit.prevent="newCommentTable">
+          <form  id="newCommentForm" @submit.prevent="newCommentTable">
               <input type="text" name="commentArea" v-model="commentForm.comment" />
               <button id="submitNewCommit" type="submit" class="btn btn-primary">Submit</button>
           </form>
