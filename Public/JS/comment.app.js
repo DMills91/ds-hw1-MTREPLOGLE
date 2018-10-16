@@ -10,19 +10,15 @@ var fetchComment = new Vue({
 
   methods: {
     newCommentTable: function() {
-
       // TODO: Check validity in a better way
       if (this.comment <= 0) {
         console.error('Cannot submit, invalid values');
         return;
       }
-
       const s = JSON.stringify(this.comment);
-
       console.log(s);
-
       // POST to remote server
-      fetch('api/comment.php', {
+      fetch('../api/comment.php', {
         method: "POST", // *GET, POST, PUT, DELETE, etc.
         headers: {
           "Content-Type": "application/json; charset=utf-8"
@@ -44,19 +40,20 @@ var fetchComment = new Vue({
         comment:null
       }
     },
-    fetchComment: function() {
+    fetchComment: function() {(
       fetch('../api/comment.php')
       .then( response => response.json() )
       .then( json => {
         fetchComment.comment = json;
+        console.log(JSON.stringify(json));
       })
       .catch( err => {
         console.log('COMMENT FETCH ERROR:');
         console.log(err);
       })
-    },
+    )},
 },
-    created ()  {
+    created: function()  {
       this.fetchComment()
     },
 })
