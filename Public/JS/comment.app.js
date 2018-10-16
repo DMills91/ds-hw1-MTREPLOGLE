@@ -10,7 +10,7 @@ var fetchComment = new Vue({
 methods: {
 
 
-  handleWorkForm() {
+  newCommentTable() {
 
     // TODO: Check validity in a better way
     if (this.newcomment <= 0) {
@@ -42,14 +42,7 @@ methods: {
     this.workForm = this.getEmptyWorkForm();
   },
 
-
-
-
-
-
-
-
-  fetchComment () {
+fetchComment () {
       fetch('.../api/comment.php')
       .then( response => response.json() )
       .then( json => {
