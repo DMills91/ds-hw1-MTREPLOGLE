@@ -43,7 +43,7 @@ var fetchComment = new Vue({
       return {
         comment:null
       }
-    },*/
+    },
     fetchComment () {
       fetch('../api/comment.php')
       .then( response => response.json() )
@@ -58,5 +58,5 @@ var fetchComment = new Vue({
 },
     created ()  {
       this.fetchComment()
-    },
+    */},
 })
