@@ -3,9 +3,9 @@ var fetchComment = new Vue({
   data: {
     comment: [],
     commentForm: {
-      id:'0',
+      /*id:'0',
       comment:''
-    },
+    */},
   },
 
   methods: {
@@ -55,9 +55,8 @@ var fetchComment = new Vue({
         console.log(err);
       })
     },
-
+},
     created ()  {
       this.fetchComment()
     },
-  }
 })
