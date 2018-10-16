@@ -13,7 +13,7 @@ methods: {
   newCommentTable() {
 
     // TODO: Check validity in a better way
-    if (this.newcomment <= 0) {
+    if (this.comment <= 0) {
       console.error('Cannot submit, invalid values');
       return;
     }
@@ -41,7 +41,12 @@ methods: {
     // Reset workForm
     this.workForm = this.getEmptyWorkForm();
   },
+getEmptyWorkForm()  {
+return {
+comment:null
 
+}
+},
 fetchComment () {
       fetch('.../api/comment.php')
       .then( response => response.json() )
