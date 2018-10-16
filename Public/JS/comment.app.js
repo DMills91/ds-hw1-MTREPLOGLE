@@ -8,8 +8,8 @@ var fetchComment = new Vue({
     */},
   },
 
-  methods: {/*
-    newCommentTable() {
+  methods: {
+    newCommentTable: function() {
 
       // TODO: Check validity in a better way
       if (this.comment <= 0) {
@@ -39,12 +39,12 @@ var fetchComment = new Vue({
       // Reset workForm
       this.workForm = this.getEmptyWorkForm();
     },
-    getEmptyWorkForm()  {
+    getEmptyWorkForm: function()  {
       return {
         comment:null
       }
     },
-    fetchComment () {
+    fetchComment: function() {
       fetch('../api/comment.php')
       .then( response => response.json() )
       .then( json => {
@@ -58,5 +58,5 @@ var fetchComment = new Vue({
 },
     created ()  {
       this.fetchComment()
-    */},
+    },
 })
